@@ -1,0 +1,34 @@
+l1_structural_skeleton:
+  format_signature:
+    h1_count: integer
+    h2_count: integer
+    h3_count: integer|null
+    list_density: enum(low, medium, high)
+    has_tables: boolean
+    has_code_blocks: boolean
+    has_example_snippets: boolean
+
+  top_level_sections:
+    - section_id: string
+      order: integer
+      heading_level: integer
+      heading_text_known: boolean
+      heading_text: string|null
+      role: string
+      relative_length: enum(tiny, short, medium, long, dominant_majority)
+      content_modes:
+        - string
+      observable_features:
+        - string
+
+  ordering_signature:
+    section_count: integer
+    dominant_section_id: string|null
+    ending_section_types:
+      - string
+
+  tone_markers:
+    - string
+
+  rhetorical_texture:
+    - string

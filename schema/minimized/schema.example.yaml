@@ -1,0 +1,63 @@
+sc: dal
+v: "1.0c"
+
+d:
+  id: uncodixify
+  t: Uncodixify
+  f: md
+  lang: en
+  st: orig
+
+m:
+  cc: 12000
+  wc: null
+  n: anti-default UI behavior spec
+
+L1:
+  fs: {h1: 3, h2: 5, h3: null, ld: h, tb: true, cb: true, ex: true}
+  sec:
+    - {id: s1, o: 1, hl: 1, hk: false, ht: null, r: manifesto/spec body, len: d, cm: [framing, bullets, bans, examples, meta-rule, color-guidance], of: ['repeated "No ..."', blunt imperatives, dense lists]}
+    - {id: s2, o: 2, hl: 1, hk: false, ht: null, r: dark palette table, len: s, cm: [palette-table], of: [named palettes, color columns]}
+    - {id: s3, o: 3, hl: 1, hk: false, ht: null, r: light palette table, len: s, cm: [palette-table], of: [named palettes, color columns]}
+  ord: {n: 3, dom: s1, end: [dark-palette-table, light-palette-table]}
+  tm: [blunt, corrective, anti-default]
+  rt: [diagnosis, positive-blueprint, hard-bans, specific-mistakes, color-governance]
+
+L2:
+  sf:
+    - {id: s1, o: 1, phr: manifesto/spec body, pns: null, fn: [define bad default AI UI, prescribe normal UI, ban recurring anti-patterns, provide decision rule, set color precedence], ks: ['Keep It Normal', 'Hard No', banned examples], dp: false, ln: true}
+    - {id: s2, o: 2, phr: dark palettes, pns: null, fn: [bounded fallback dark palettes], ks: [palette-table], dp: true, ln: true}
+    - {id: s3, o: 3, phr: light palettes, pns: null, fn: [bounded fallback light palettes], ks: [palette-table], dp: true, ln: false}
+  grp: [diagnose, prescribe, prohibit, postmortem, compress-to-rule, append-palettes]
+  scr: [main section contains conceptual content, final two sections are appendices]
+
+L3:
+  ct: [default AI UI is recognizable and undesirable, restrained product-like UI is the replacement]
+  dr: [decoration without product reason is suspect, familiar product patterns outrank invention, project colors outrank invented palettes]
+  dh: [if a UI move feels default-AI, reject it]
+  as:
+    temp: [corrective, impatient-with-repeat-failures]
+    exp: [reacting to repeated generic dashboard outputs]
+    sty: [blunt bans, practical references, anti-theatrical UI]
+  rb:
+    pri: [rough human emphasis, repeated bans, standard product patterns]
+    av: [corporate polish, over-formalization]
+
+S1:
+  cl:
+    - {id: b1, cr: ban, it: [soft gradients, floating panels, eyebrow labels, oversized rounded corners, hero sections in dashboards]}
+    - {id: d1, cr: pd, it: [fixed-width sidebar, subtle borders, modest radii, clear hierarchy, standard grid/flex]}
+    - {id: c1, cr: pal, it: [use project colors first, otherwise use predefined palettes, do not invent random combinations]}
+  ep:
+    - {id: e1, tp: head, ds: small label + decorative large heading + explanatory paragraph}
+  tok: [normal, no, dashboard, premium]
+  lc: [no pill overload, no fake charts]
+
+S2:
+  lop:
+    mh: "3 H1, 5 H2, last 2 H1 are palette tables"
+    rs: [repeated negative commands]
+    vp: [blunt, opinionated, rough]
+    ex: true
+  rc: [preserve repetitive bans, keep last two H1 as palette tables]
+  ad: [do not over-formalize, do not smooth rough emphasis]

@@ -1,0 +1,23 @@
+schema_name: document_abstraction_ladder
+schema_version: "1.0"
+
+document:
+  document_id: string
+  title: string
+  source_format: enum(markdown, html, txt, docx, pdf, other)
+  source_language: string
+  source_status: enum(original, reconstructed, transformed, unknown)
+
+metadata:
+  approx_character_count: integer
+  approx_word_count: integer|null
+  notes: string|null
+
+layers:
+  l1_structural_skeleton: object
+  l2_section_function_map: object
+  l3_governing_principles: object
+
+sidecars:
+  s1_atomic_inventory: object|null
+  s2_reconstruction_hints: object|null

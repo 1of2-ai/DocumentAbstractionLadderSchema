@@ -1,0 +1,46 @@
+sc: dal
+v: "1.0c"
+
+d:
+  id: ""
+  t: ""
+  f: md
+  lang: en
+  st: orig
+
+m:
+  cc: 0
+  wc: null
+  n: null
+
+L1:
+  fs: {h1: 0, h2: 0, h3: null, ld: m, tb: false, cb: false, ex: false}
+  sec: []
+  ord: {n: 0, dom: null, end: []}
+  tm: []
+  rt: []
+
+L2:
+  sf: []
+  grp: []
+  scr: []
+
+L3:
+  ct: []
+  dr: []
+  dh: []
+  as:
+    temp: []
+    exp: []
+    sty: []
+  rb:
+    pri: []
+    av: []
+
+S1:
+  cl: []
+  ep: []
+  tok: []
+  lc: []
+
+S2: null

@@ -1,0 +1,18 @@
+l2_section_function_map:
+  section_functions:
+    - section_id: string
+      order: integer
+      probable_heading_role: string
+      probable_named_section: string|null
+      function:
+        - string
+      key_signals:
+        - string
+      depends_on_previous_section: boolean
+      leads_into_next_section: boolean
+
+  global_rhetorical_path:
+    - string
+
+  section_correspondence_rules:
+    - string

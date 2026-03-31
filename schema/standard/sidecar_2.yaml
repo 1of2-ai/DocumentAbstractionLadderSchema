@@ -1,0 +1,14 @@
+s2_reconstruction_hints:
+  likely_original_properties:
+    markdown_heading_pattern: string|null
+    repetition_style:
+      - string
+    voice_properties:
+      - string
+    likely_examples_present: boolean
+
+  reconstruction_constraints:
+    - string
+
+  anti_drift_rules:
+    - string

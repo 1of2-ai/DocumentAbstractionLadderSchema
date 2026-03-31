@@ -1,0 +1,218 @@
+schema_name: document_abstraction_ladder
+schema_version: "1.0"
+
+document:
+  document_id: uncodixify
+  title: Uncodixify
+  source_format: markdown
+  source_language: en
+  source_status: original
+
+metadata:
+  approx_character_count: 12000
+  approx_word_count: null
+  notes: "Anti-default UI behavior spec."
+
+layers:
+  l1_structural_skeleton:
+    format_signature:
+      h1_count: 3
+      h2_count: 5
+      h3_count: null
+      list_density: high
+      has_tables: true
+      has_code_blocks: true
+      has_example_snippets: true
+
+    top_level_sections:
+      - section_id: s1
+        order: 1
+        heading_level: 1
+        heading_text_known: false
+        heading_text: null
+        role: main manifesto / UI behavior control spec
+        relative_length: dominant_majority
+        content_modes:
+          - opening prose framing
+          - grouped bullet lists
+          - explicit bans
+          - examples
+          - meta rule
+          - color-selection instructions
+        observable_features:
+          - repeated "No ..."
+          - blunt imperatives
+          - dense bullets
+      - section_id: s2
+        order: 2
+        heading_level: 1
+        heading_text_known: false
+        heading_text: null
+        role: dark palette reference table
+        relative_length: short
+        content_modes:
+          - named palette table
+        observable_features:
+          - columns for palette values
+      - section_id: s3
+        order: 3
+        heading_level: 1
+        heading_text_known: false
+        heading_text: null
+        role: light palette reference table
+        relative_length: short
+        content_modes:
+          - named palette table
+        observable_features:
+          - columns for palette values
+
+    ordering_signature:
+      section_count: 3
+      dominant_section_id: s1
+      ending_section_types:
+        - dark palette table
+        - light palette table
+
+    tone_markers:
+      - blunt
+      - corrective
+      - anti-default
+    rhetorical_texture:
+      - diagnosis
+      - positive blueprint
+      - hard bans
+      - specific mistakes
+      - color governance
+
+  l2_section_function_map:
+    section_functions:
+      - section_id: s1
+        order: 1
+        probable_heading_role: manifesto/spec body
+        probable_named_section: null
+        function:
+          - define the unwanted default AI UI aesthetic
+          - replace it with constrained normal UI defaults
+          - forbid recurring anti-patterns
+          - provide a decision rule and color guidance
+        key_signals:
+          - "Keep It Normal"
+          - "Hard No"
+          - specific banned examples
+        depends_on_previous_section: false
+        leads_into_next_section: true
+      - section_id: s2
+        order: 2
+        probable_heading_role: dark palettes
+        probable_named_section: null
+        function:
+          - provide bounded fallback dark palettes
+        key_signals:
+          - palette table
+        depends_on_previous_section: true
+        leads_into_next_section: true
+      - section_id: s3
+        order: 3
+        probable_heading_role: light palettes
+        probable_named_section: null
+        function:
+          - provide bounded fallback light palettes
+        key_signals:
+          - palette table
+        depends_on_previous_section: true
+        leads_into_next_section: false
+
+    global_rhetorical_path:
+      - diagnose
+      - prescribe
+      - prohibit
+      - postmortem
+      - compress into rule
+      - append palette references
+
+    section_correspondence_rules:
+      - main section contains all conceptual content
+      - final two sections are appended reference material
+
+  l3_governing_principles:
+    core_thesis:
+      - default AI UI aesthetics are recognizable and undesirable
+      - restrained, normal, human-designed UI is the replacement target
+    deep_rules:
+      - decoration without product justification is suspect
+      - familiar product patterns outrank model invention
+      - existing project colors outrank fresh palette invention
+    decision_heuristics:
+      - if a UI move feels like a default AI move, reject it
+    author_signal:
+      temperament:
+        - corrective
+        - impatient with repeated UI failures
+      probable_experience_pattern:
+        - reacting to repeated generic dashboard outputs
+      stylistic_preferences:
+        - blunt prohibitions
+        - practical references
+        - anti-theatrical UI
+    reconstruction_bias:
+      prioritize:
+        - rough human emphasis
+        - repeated bans
+        - standard product patterns
+      avoid:
+        - polishing into corporate design-system language
+
+sidecars:
+  s1_atomic_inventory:
+    atomic_clusters:
+      - cluster_id: bans_1
+        cluster_role: bans
+        items:
+          - soft gradients
+          - floating panels
+          - eyebrow labels
+          - oversized rounded corners
+          - hero sections inside dashboards
+      - cluster_id: defaults_1
+        cluster_role: positive_defaults
+        items:
+          - fixed-width sidebar
+          - subtle borders
+          - modest radii
+          - clear hierarchy
+          - standard grid/flex
+      - cluster_id: colors_1
+        cluster_role: palette_rules
+        items:
+          - use project colors first
+          - otherwise use predefined palettes
+          - do not invent random combinations
+    example_patterns:
+      - example_id: ex1
+        type: heading_pattern
+        description: small label + large decorative dashboard heading + explanatory paragraph
+    recurring_tokens:
+      - normal
+      - no
+      - dashboard
+      - premium
+    local_constraints:
+      - no pill overload
+      - no fake charts
+
+  s2_reconstruction_hints:
+    likely_original_properties:
+      markdown_heading_pattern: "3 H1 sections, 5 H2 sections total"
+      repetition_style:
+        - repeated negative commands
+      voice_properties:
+        - blunt
+        - opinionated
+        - rough
+      likely_examples_present: true
+    reconstruction_constraints:
+      - keep final two H1 sections as palette tables
+      - preserve repetitive bans
+    anti_drift_rules:
+      - do not over-formalize
+      - do not smooth out rough emphasis

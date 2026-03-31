@@ -1,0 +1,23 @@
+l3_governing_principles:
+  core_thesis:
+    - string
+
+  deep_rules:
+    - string
+
+  decision_heuristics:
+    - string
+
+  author_signal:
+    temperament:
+      - string
+    probable_experience_pattern:
+      - string
+    stylistic_preferences:
+      - string
+
+  reconstruction_bias:
+    prioritize:
+      - string
+    avoid:
+      - string

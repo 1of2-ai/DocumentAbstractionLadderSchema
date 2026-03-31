@@ -1,0 +1,42 @@
+f:
+  md: markdown
+  html: html
+  txt: plain text
+  docx: docx
+  pdf: pdf
+  oth: other
+
+st:
+  orig: original
+  recon: reconstructed
+  xfm: transformed
+  unk: unknown
+
+ld:
+  l: low
+  m: medium
+  h: high
+
+len:
+  t: tiny
+  s: short
+  m: medium
+  l: long
+  d: dominant_majority
+
+cr:
+  pd: positive_defaults
+  ban: bans
+  ex: examples
+  term: terminology
+  cst: constraints
+  pal: palette_rules
+  sm: style_markers
+  mis: mistakes
+
+tp:
+  html: html_snippet
+  prose: prose_pattern
+  head: heading_pattern
+  lay: layout_pattern
+  oth: other

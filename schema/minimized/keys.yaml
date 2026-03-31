@@ -1,0 +1,86 @@
+sc: schema name
+v: schema version
+
+d: document
+  id: document id
+  t: title
+  f: format
+  lang: language
+  st: status
+
+m: metadata
+  cc: approx character count
+  wc: approx word count
+  n: notes
+
+L1: structural skeleton
+  fs: format signature
+    h1: H1 count
+    h2: H2 count
+    h3: H3 count
+    ld: list density
+    tb: has tables
+    cb: has code blocks
+    ex: has example snippets
+  sec: top-level sections
+    id: section id
+    o: order
+    hl: heading level
+    hk: heading known
+    ht: heading text
+    r: role
+    len: relative length
+    cm: content modes
+    of: observable features
+  ord: ordering signature
+    n: section count
+    dom: dominant section id
+    end: ending section types
+  tm: tone markers
+  rt: rhetorical texture
+
+L2: section function map
+  sf: section functions
+    id: section id
+    o: order
+    phr: probable heading role
+    pns: probable named section
+    fn: function
+    ks: key signals
+    dp: depends on previous
+    ln: leads into next
+  grp: global rhetorical path
+  scr: section correspondence rules
+
+L3: governing principles
+  ct: core thesis
+  dr: deep rules
+  dh: decision heuristics
+  as: author signal
+    temp: temperament
+    exp: probable experience pattern
+    sty: stylistic preferences
+  rb: reconstruction bias
+    pri: prioritize
+    av: avoid
+
+S1: atomic inventory
+  cl: atomic clusters
+    id: cluster id
+    cr: cluster role
+    it: items
+  ep: example patterns
+    id: example id
+    tp: type
+    ds: description
+  tok: recurring tokens
+  lc: local constraints
+
+S2: reconstruction hints
+  lop: likely original properties
+    mh: markdown heading pattern
+    rs: repetition style
+    vp: voice properties
+    ex: likely examples present
+  rc: reconstruction constraints
+  ad: anti-drift rules

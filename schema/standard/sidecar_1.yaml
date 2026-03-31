@@ -1,0 +1,17 @@
+s1_atomic_inventory:
+  atomic_clusters:
+    - cluster_id: string
+      cluster_role: enum(positive_defaults, bans, examples, terminology, constraints, palette_rules, style_markers, mistakes)
+      items:
+        - string
+
+  example_patterns:
+    - example_id: string
+      type: enum(html_snippet, prose_pattern, heading_pattern, layout_pattern, other)
+      description: string
+
+  recurring_tokens:
+    - string
+
+  local_constraints:
+    - string

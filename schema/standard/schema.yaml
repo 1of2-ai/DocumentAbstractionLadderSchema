@@ -1,0 +1,61 @@
+schema_name: document_abstraction_ladder
+schema_version: "1.0"
+
+document:
+  document_id: ""
+  title: ""
+  source_format: markdown
+  source_language: en
+  source_status: original
+
+metadata:
+  approx_character_count: 0
+  approx_word_count: null
+  notes: null
+
+layers:
+  l1_structural_skeleton:
+    format_signature:
+      h1_count: 0
+      h2_count: 0
+      h3_count: null
+      list_density: medium
+      has_tables: false
+      has_code_blocks: false
+      has_example_snippets: false
+
+    top_level_sections: []
+
+    ordering_signature:
+      section_count: 0
+      dominant_section_id: null
+      ending_section_types: []
+
+    tone_markers: []
+    rhetorical_texture: []
+
+  l2_section_function_map:
+    section_functions: []
+    global_rhetorical_path: []
+    section_correspondence_rules: []
+
+  l3_governing_principles:
+    core_thesis: []
+    deep_rules: []
+    decision_heuristics: []
+    author_signal:
+      temperament: []
+      probable_experience_pattern: []
+      stylistic_preferences: []
+    reconstruction_bias:
+      prioritize: []
+      avoid: []
+
+sidecars:
+  s1_atomic_inventory:
+    atomic_clusters: []
+    example_patterns: []
+    recurring_tokens: []
+    local_constraints: []
+
+  s2_reconstruction_hints: null
